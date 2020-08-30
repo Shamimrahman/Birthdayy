@@ -24,8 +24,8 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
-			$('#play').fadeIn('slow');
+		$(this).fadeOut('fast').delay(2000).promise().done(function(){
+			$('#play').fadeIn('fast');
 		});
 	});
 	$('#play').click(function(){
@@ -39,15 +39,15 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
-			$('#bannar_coming').fadeIn('slow');
+		$(this).fadeOut('fAST').delay(1000).promise().done(function(){
+			$('#bannar_coming').fadeIn('fast');
 		});
 	});
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
-			$('#balloons_flying').fadeIn('slow');
+		$(this).fadeOut('fast').delay(1000).promise().done(function(){
+			$('#balloons_flying').fadeIn('fast');
 		});
 	});
 
@@ -119,22 +119,22 @@ $('document').ready(function(){
 		loopSix();
 		loopSeven();
 		
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
-			$('#cake_fadein').fadeIn('slow');
+		$(this).fadeOut('fast').delay(1000).promise().done(function(){
+			$('#cake_fadein').fadeIn('fast');
 		});
 	});	
 
 	$('#cake_fadein').click(function(){
-		$('.cake').fadeIn('slow');
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
-			$('#light_candle').fadeIn('slow');
+		$('.cake').fadeIn('fast');
+		$(this).fadeOut('fast').delay(1000).promise().done(function(){
+			$('#light_candle').fadeIn('fast');
 		});
 	});
 
 	$('#light_candle').click(function(){
-		$('.fuego').fadeIn('slow');
-		$(this).fadeOut('slow').promise().done(function(){
-			$('#wish_message').fadeIn('slow');
+		$('.fuego').fadeIn('fast');
+		$(this).fadeOut('fast').promise().done(function(){
+			$('#wish_message').fadeIn('fast');
 		});
 	});
 
@@ -165,9 +165,9 @@ $('document').ready(function(){
 	});
 	
 	$('#story').click(function(){
-		$(this).fadeOut('slow');
+		$(this).fadeOut('fast');
 		$('.cake').fadeOut('fast').promise().done(function(){
-			$('.message').fadeIn('slow');
+			$('.message').fadeIn('fast');
 		});
 		
 		var i;
